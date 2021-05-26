@@ -14,4 +14,4 @@ def create_app(config_file="settings.py"):
 
 app = create_app()
 
-from mrbackend.src.controller import UserController
+from mrbackend.src.controller import userController, searchController
