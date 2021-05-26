@@ -9,3 +9,4 @@ Open endpoints require no Authentication.
 
 * [Search movie](search.md) : `GET /search/movie?query={query}`
 * [Search TV](search.md) : `GET /search/tv?query={query}`
+* [User creation](user/create.md) : `POST /user/create`
