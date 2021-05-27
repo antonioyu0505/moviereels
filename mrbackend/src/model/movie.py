@@ -5,3 +5,4 @@ class Movie():
     self.name = name
     self.overview = overview
     self.posterPath = posterPath
+    self.genres = []
