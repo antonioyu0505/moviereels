@@ -4,7 +4,7 @@ from unicodedata import normalize
 
 class MovieSchema(ma.Schema):
   class Meta:
-    fields = ('id', 'name', 'overview', 'posterPath')
+    fields = ('id', 'name', 'overview', 'posterPath', 'genres')
 
   @post_dump
   def normalizeCharacters(self, data, **kwargs):
