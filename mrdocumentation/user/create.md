@@ -1,6 +1,6 @@
-# User
+# User creation
 
-Used to search for a specific movie or TV series.
+Used to create a user
 
 **URL** : `/user/create`
 
@@ -34,8 +34,6 @@ Used to search for a specific movie or TV series.
 
 **Content example**
 
-Content may be longer than what is posted below.
-
 ```json
 {}
 ```
@@ -44,7 +42,7 @@ Content may be longer than what is posted below.
 
 **Condition** : If 'username' is duplicated.
 
-**Code** : `409 CONFLICT`
+**Code** : `401 UNAUTHORIZED`
 
 **Content** :
 
