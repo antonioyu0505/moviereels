@@ -16,4 +16,4 @@ app = create_app()
 
 with app.app_context(): Base.prepare(db.engine, reflect = True)
 
-from mrbackend.src.controller import userController, searchController
+from mrbackend.src.controller import userController, searchController, listController, itemController
