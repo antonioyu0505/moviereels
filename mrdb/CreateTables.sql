@@ -3,15 +3,13 @@
 
 -- tables
 -- Table: Movie
+use moviereelsdb;
 CREATE TABLE Movie (
     id int NOT NULL AUTO_INCREMENT,
     type varchar(10) NOT NULL,
-    tag varchar(15) NOT NULL,
     typeId int NOT NULL,
-    UNIQUE INDEX unique_typeId (typeId),
     CONSTRAINT Movie_pk PRIMARY KEY (id)
 );
-
 -- Table: User
 CREATE TABLE User (
     id int NOT NULL AUTO_INCREMENT,
@@ -28,6 +26,7 @@ CREATE TABLE UserList (
     id int NOT NULL AUTO_INCREMENT,
     userId int NOT NULL,
     movieId int NOT NULL,
+    tag varchar(15) NOT NULL,
     CONSTRAINT UserList_pk PRIMARY KEY (id)
 );
 
